@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff; /* Fondo claro */
+  color: #000; /* Texto negro */
+}
+
+.app {
+  max-width: 800px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 20px; /* Espaciado interno */
+}
+
+h1 {
+  text-align: center; /* Centrar el título */
+  font-size: 28px; /* Tamaño del texto */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column; /* Dirección vertical */
+  gap: 15px; /* Espacio entre campos */
+  border: 1px solid #ccc; /* Borde gris */
+  padding: 20px; /* Espaciado interno */
+  margin-bottom: 20px; /* Margen inferior */
+  background-color: #ffffff; /* Fondo blanco */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.task-form input {
+  padding: 10px; /* Espacio interno en campos */
+  border: 1px solid #ccc; /* Borde gris */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+.task-form button {
+  background-color: #007bff; /* Color de fondo azul */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px; /* Espaciado interno del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar */
+  transition: background-color 0.3s; /* Transición suave */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+.task-form button:hover {
+  background-color: #0056b3; /* Color al pasar el mouse */
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column; /* Apilar registros verticalmente */
+  gap: 20px; /* Espacio entre tarjetas */
+}
+
+.task-item {
+  display: flex; /* Usar flex para columnas */
+  justify-content: space-between; /* Espaciado uniforme */
+  padding: 15px; /* Espaciado interno */
+  border: 1px solid #ddd; /* Borde gris */
+  border-radius: 8px; /* Bordes redondeados */
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  /* Eliminado efecto de hover que amplía */
+}
+
+.task-item.header {
+  font-weight: bold; /* Negrita para encabezados */
+  background-color: #007bff; /* Fondo azul para encabezados */
+  color: white; /* Texto blanco para encabezados */
+}
+
+.task-item div {
+  text-align: left; /* Alinear a la izquierda */
+  padding: 5px; /* Ampliar espacio dentro de cada casilla */
+  flex: 1; /* Cada div ocupa el mismo espacio */
+}
+
+.action-button {
+  background-color: #007bff; /* Color de fondo azul */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  padding: 8px 12px; /* Espaciado interno del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar */
+  transition: background-color 0.3s; /* Transición suave */
+}
+
+.action-button:hover {
+  background-color: #0056b3; /* Color al pasar el mouse */
+}
