@@ -40,7 +40,7 @@ const TaskForm = ({ addTask, editIndex, updateTask, tasks }) => {
             <input type="text" name="producto" placeholder="Producto" value={formData.producto} onChange={handleChange} required />
             <input type="text" name="referencia" placeholder="Referencia" value={formData.referencia} onChange={handleChange} required />
             <input type="number" name="precio" placeholder="Precio" value={formData.precio} onChange={handleChange} required />
-            <button type="submit">{editIndex !== null ? 'Actualizar' : 'Agregar'}</button>
+            <button type="submit">{editIndex !== null ? 'Actualizar Venta' : 'Registrar Venta'}</button>
         </form>
     );
 };

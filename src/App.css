@@ -1,38 +1,41 @@
 .App {
   text-align: center;
+  background-color: #1e1e2f; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task-form,
+.task-list {
+  margin: 20px 0;
+  background-color: #282c34; /* Fondo del formulario y lista */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  font-weight: bold;
+  background-color: #333; /* Fondo del encabezado */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.action-button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cursor tipo puntero */
+}
+
+.action-button:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el cursor */
 }

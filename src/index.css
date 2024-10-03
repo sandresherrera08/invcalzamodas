@@ -64,7 +64,6 @@ h1 {
   border-radius: 8px; /* Bordes redondeados */
   background-color: #ffffff; /* Fondo blanco */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-  /* Eliminado efecto de hover que amplía */
 }
 
 .task-item.header {
@@ -77,9 +76,19 @@ h1 {
   text-align: left; /* Alinear a la izquierda */
   padding: 5px; /* Ampliar espacio dentro de cada casilla */
   flex: 1; /* Cada div ocupa el mismo espacio */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que sobrepasa */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos para el texto que se corta */
+}
+
+.total-row {
+  background-color: #007bff; /* Fondo azul para el total */
+  color: white; /* Texto blanco */
+  font-weight: bold; /* Negrita */
 }
 
 .action-button {
+  margin: 5px; /* Margen para separar del resto del contenido */
   background-color: #007bff; /* Color de fondo azul */
   color: white; /* Texto blanco */
   border: none; /* Sin borde */
